@@ -37,7 +37,7 @@
     "trailingComma": "es5"
   },
   "name": "design-system",
-  "author": "devendra-learngram-ai",
+  "author": "devendra-saroj",
   "module": "dist/design-system.esm.js",
   "size-limit": [
     {
