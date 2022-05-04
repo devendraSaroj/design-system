@@ -1,0 +1,44 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs';
+import { Spinner } from '../src';
+
+<Meta
+  title="FEEDBACK/Spinner"
+  component={Spinner}
+  decorators={[
+    (Story) => (
+      <div
+        style={{
+          display: 'flex',
+          gap: 40,
+          alignItems: 'center',
+          padding: 20,
+          backgroundColor: 'hsl(221, 97%, 64%)',
+        }}
+      >
+        <Story />
+      </div>
+    ),
+  ]}
+/>
+
+## Size
+
+<Preview>
+  <Story name="size">
+    <Spinner />
+    <Spinner size="medium" />
+    <Spinner size="large" />
+    <Spinner size="giant" />
+  </Story>
+</Preview>
+
+## Color
+
+<Preview>
+  <Story name="color">
+    <Spinner />
+    <Spinner size="medium" color="#fed453" />
+    <Spinner size="large" color="purple" />
+    <Spinner size="giant" color="red" />
+  </Story>
+</Preview>
