@@ -1,8 +1,9 @@
 import React, { FC, HTMLAttributes, ReactChild } from 'react';
 import { Button } from './Buttons/Button/Button';
-import DialogWizard from './Dialogs/DialogWizard/DialogWizard';
+import { DialogWizard } from './Dialogs/DialogWizard';
 import { Spinner } from './Feedback/Spinner';
-import './index.css';
+
+// import './index.css';
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   /** custom content, defaults to 'the snozzberries taste like snozzberries' */
   children?: ReactChild;
