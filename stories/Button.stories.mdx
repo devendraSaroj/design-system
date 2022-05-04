@@ -1,0 +1,56 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs';
+import { Button } from '../src';
+
+<Meta
+  title="BUTTONS/ Button"
+  component={Button}
+  decorators={[
+    (Story) => (
+      <div style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
+        <Story />
+      </div>
+    ),
+  ]}
+/>
+
+## Loading
+
+<Preview>
+  <Story name="loading">
+    <Button variants="fill">Fill</Button>
+    <Button variants="fill" isLoading={true}>
+      Fill Loading
+    </Button>
+  </Story>
+</Preview>
+
+## Variants
+
+<Preview>
+  <Story name="variants">
+    <Button variants="fill">Fill</Button>
+    <Button variants="outline">Outline</Button>
+    <Button variants="ghost">Ghost</Button>
+  </Story>
+</Preview>
+
+## Size
+
+<Preview>
+  <Story name="size">
+    <Button size="large">Large</Button>
+    <Button size="medium">Medium</Button>
+    <Button size="small">Small</Button>
+  </Story>
+</Preview>
+
+## Color scheme
+
+<Preview>
+  <Story name="color scheme">
+    <Button>Default</Button>
+    <Button colorScheme="success">Success</Button>
+    <Button colorScheme="alert">Alert</Button>
+    <Button colorScheme="danger">Danger</Button>
+  </Story>
+</Preview>
