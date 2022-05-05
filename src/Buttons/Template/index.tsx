@@ -18,7 +18,7 @@ ButtonTemplate.defaultProps = {
   type: 'button',
   size: 'medium',
   variants: 'fill',
-  colorScheme: 'default',
+  colorScheme: 'primary',
   isLoading: false,
 };
 

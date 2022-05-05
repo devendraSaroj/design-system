@@ -21,7 +21,7 @@ const IconButton = (props: IconButtonProps) => {
 IconButton.defaultProps = {
   size: 'small',
   variants: 'ghost',
-  colorScheme: 'default',
+  colorScheme: 'black',
   isLoading: false,
   type: 'button',
 };
