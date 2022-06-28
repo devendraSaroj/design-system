@@ -1,7 +1,10 @@
-import { CSSProperties, ReactNode } from 'react';
+import { CSSProperties, HTMLProps, ReactNode } from 'react';
 import { colors } from '../../DesignTokens/Colors';
+import { ExtractMethods } from '../../Utils/typeUtils';
 
-export interface ButtonTemplateProps {
+type HtmlBtnMethods = ExtractMethods<HTMLProps<HTMLButtonElement>>;
+
+export interface ButtonTemplateProps extends HtmlBtnMethods {
   size?: 'small' | 'medium' | 'large';
   variants?: 'fill' | 'outline' | 'ghost';
   colorScheme?: 'primary' | 'success' | 'alert' | 'danger' | 'black';

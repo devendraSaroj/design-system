@@ -1,5 +1,5 @@
 import React, { FC, HTMLAttributes, ReactChild } from 'react';
-import { Button } from './Buttons/Button/Button';
+import { Button } from './Buttons/Button';
 import { DialogWizard } from './Dialogs/DialogWizard';
 import { Spinner } from './Feedback/Spinner';
 

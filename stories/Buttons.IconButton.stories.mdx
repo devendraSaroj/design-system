@@ -3,7 +3,7 @@ import IconButton from '../src/Buttons/IconButton';
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 
 <Meta
-  title="BUTTONS/IconButton"
+  title="BUTTONS/Icon Button"
   component={IconButton}
   decorators={[
     (Story) => (
@@ -17,7 +17,7 @@ import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 ## Icon Button
 
 <Preview>
-  <Story name="default">
+  <Story name="default" parameters={{ controls: { exclude: '^on.*' } }}>
     <IconButton>
       <HiOutlineArrowNarrowLeft />
     </IconButton>

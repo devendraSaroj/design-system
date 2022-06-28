@@ -3,7 +3,7 @@ import ButtonTemplate from '../Template';
 import { ButtonTemplateProps } from '../Template/utils';
 import { constants } from './utils';
 
-type IconButtonProps = Omit<ButtonTemplateProps, 'children'> & {
+export type IconButtonProps = Omit<ButtonTemplateProps, 'children'> & {
   children: ReactElement;
 };
 

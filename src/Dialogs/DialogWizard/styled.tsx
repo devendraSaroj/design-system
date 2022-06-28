@@ -26,7 +26,7 @@ export const HeaderLeft = styled.div`
   font-family: 'Poppins';
 
   span {
-    margin-right: 10px;
+    margin-left: 10px;
   }
 `;
 
@@ -53,7 +53,6 @@ export const ProgressThumb = styled.div<{ width: number }>`
   height: 100%;
   background-color: rgb(62, 122, 252);
   width: ${(props) => props.width}%;
-  transition: width 0.6s ease;
 `;
 
 export const DialogBody = styled.div`
