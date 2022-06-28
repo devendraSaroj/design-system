@@ -3,7 +3,7 @@ import ButtonTemplate from '../Template';
 import { ButtonTemplateProps } from '../Template/utils';
 import { constants } from './utils';
 
-type IconButtonProps = Omit<ButtonTemplateProps, 'children'> & {
+export type IconButtonProps = Omit<ButtonTemplateProps, 'children'> & {
   children: ReactElement;
 };
 
@@ -21,7 +21,7 @@ const IconButton = (props: IconButtonProps) => {
 IconButton.defaultProps = {
   size: 'small',
   variants: 'ghost',
-  colorScheme: 'default',
+  colorScheme: 'black',
   isLoading: false,
   type: 'button',
 };

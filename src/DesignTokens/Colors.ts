@@ -21,6 +21,11 @@ export const colors = {
       main: 'hsl(46, 100%, 54%)',
       ghost: 'hsl(46, 100%, 95%)',
     },
+    black: {
+      dark: 'hsl(0, 0%, 0%)',
+      main: 'hsl(0, 0%, 0%)',
+      ghost: 'hsl(0, 0%, 95%)',
+    },
     button: {
       hover: 'hsl(222, 100%, 95%)',
     },

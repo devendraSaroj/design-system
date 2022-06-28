@@ -1,10 +1,13 @@
-import { CSSProperties, ReactNode } from 'react';
+import { CSSProperties, HTMLProps, ReactNode } from 'react';
 import { colors } from '../../DesignTokens/Colors';
+import { ExtractMethods } from '../../Utils/typeUtils';
 
-export interface ButtonTemplateProps {
+type HtmlBtnMethods = ExtractMethods<HTMLProps<HTMLButtonElement>>;
+
+export interface ButtonTemplateProps extends HtmlBtnMethods {
   size?: 'small' | 'medium' | 'large';
   variants?: 'fill' | 'outline' | 'ghost';
-  colorScheme?: 'default' | 'success' | 'alert' | 'danger';
+  colorScheme?: 'primary' | 'success' | 'alert' | 'danger' | 'black';
   children: ReactNode;
   isLoading?: boolean;
   type?: 'button' | 'submit' | 'reset';
@@ -18,7 +21,7 @@ export const constants = {
     large: '48px',
   },
   color: {
-    default: {
+    primary: {
       main: colors.light.primary.main,
       hover: {
         fill: colors.light.primary.dark,
@@ -48,6 +51,14 @@ export const constants = {
         fill: colors.light.danger.dark,
         outline: colors.light.danger.ghost,
         ghost: colors.light.danger.ghost,
+      },
+    },
+    black: {
+      main: colors.light.black.main,
+      hover: {
+        fill: colors.light.black.dark,
+        outline: colors.light.black.ghost,
+        ghost: colors.light.black.ghost,
       },
     },
   },
